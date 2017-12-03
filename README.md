@@ -36,7 +36,9 @@ Date: Sun, 03 Dec 2017 19:41:35 GMT
 ```
 
 ```json
-{"org.springmeetup:weather-service:0.0.1-SNAPSHOT:stubs":8080}
+{
+	"org.springmeetup:weather-service:0.0.1-SNAPSHOT:stubs":8080
+}
 ```
 
 ```shell
@@ -48,7 +50,13 @@ Server: Jetty(9.4.7.v20170914)
 ```
 
 ```json
-{"temperature":39.15,"weatherId":800,"weatherIcon":"01d","name":"Denizli","timestamp":1505824065}
+{
+	"temperature": 39.15,
+	"weatherId": 800,
+	"weatherIcon": "01d",
+	"name": "Denizli",
+	"timestamp": 1505824065
+}
 ```
 
 ### 1.2 - Open generated API docs:
