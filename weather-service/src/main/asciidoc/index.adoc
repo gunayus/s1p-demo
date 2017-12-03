@@ -1,0 +1,56 @@
+= Weather Service API
+İstanbul Spring Meetup;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+
+
+[[introduction]]
+== Introduction
+
+The documentation of demo Weather service API.
+
+
+|===
+|Desription |Release Date |Version
+
+|Document versioning started
+|05.08.2017
+|v1.0.0
+
+|===
+
+
+[[weather_info_api]]
+== Get Weather Info
+
+Weather query API
+
+[[get_weather_info]]
+=== Query Weather API
+
+Current authentication service is available at `/weather/current/{country}/{city}`
+
+
+[[get_weather_info-request]]
+==== Request
+For example, a curl request looks like this:
+
+include::{snippets}/get_weather_info/curl-request.adoc[]
+
+
+[[get_weather_info-response]]
+==== Response
+
+The following fields are found in the response:
+
+include::{snippets}/get_weather_info/response-fields.adoc[]
+
+A typical response looks like this:
+
+include::{snippets}/get_weather_info/http-response.adoc[]
+
