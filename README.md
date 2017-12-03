@@ -1,7 +1,18 @@
-# Istanbul Spring Meetup - Spring Cloud Workshop Series #2 - demo project
+# SpringOne platform 2017 - demo project
 
 ## 1 - Build the project
 mvn clean install
+
+### 1.1 check API doc is generated
+```shell
+Erdems-MacBook-Pro-2:s1p-demo egunay$ ls -al weather-service/target/generated-docs/
+total 184
+drwxr-xr-x   4 egunay  staff    136 Dec  3 11:07 .
+drwxr-xr-x  15 egunay  staff    510 Dec  3 11:07 ..
+-rw-r--r--   1 egunay  staff  35407 Dec  3 11:07 index.html
+-rw-r--r--   1 egunay  staff  56901 Dec  3 11:07 index.pdf
+```
+
 
 ### 1.1 - Run weather-service stubs as a standalone server @port:8080
 java -jar weather-service-stub-runner/target/weather-service-stub-runner-0.0.1-SNAPSHOT.jar --stubrunner.ids=org.springmeetup:weather-service:0.0.1-SNAPSHOT:8080 --server.port=8081
