@@ -20,7 +20,7 @@ public class WeatherSummaryController {
 	@Autowired
 	WeatherServiceClient weatherServiceClient;
 
-	private List<String> locations = Arrays.asList("Peru/Lima", "USA/Las Vegas", "TR/Ankara");
+	private List<String> locations = Arrays.asList("Peru/Lima", "US/Las Vegas", "TR/Ankara");
 
 	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView conferenceWeather() {
