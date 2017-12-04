@@ -10,10 +10,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springmeetup.weather.service.ows.WeatherServiceOWSClient;
 import org.springmeetup.weather.service.ows.domain.Weather;
 
-import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
+import io.restassured.module.mockmvc.RestAssuredMockMvc;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = WeatherServiceApplication.class)
+@SpringBootTest(classes = WeatherServiceApplicationTest.class)
 public class BaseClass {
 
     @Autowired

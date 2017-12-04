@@ -22,7 +22,7 @@ import org.springmeetup.weather.service.ows.WeatherServiceOWSClient;
 import org.springmeetup.weather.service.ows.domain.Weather;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = WeatherServiceApplication.class)
+@SpringBootTest(classes = WeatherServiceApplicationTest.class)
 @AutoConfigureRestDocs(outputDir = "target/generated-snippets", uriPort=8080)
 @AutoConfigureMockMvc
 public class RestDocumentationTests {
