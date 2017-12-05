@@ -86,19 +86,42 @@ mvn spring-boot:run
 2017-12-03 12:46:00.620  INFO 75257 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8761 (http)
 ```
 
+### 2.3 - Run weather-service @port 8010
+
+```shell
 cd weather-service
 mvn spring-boot:run
+```
 
-test the API : 
-curl http://localhost:8040/weather/current/TR/Ankara -i
+test the API :
 
+```shell 
+curl http://localhost:8010/weather/current/TR/Ankara -i
+HTTP/1.1 200 
+X-Application-Context: weather-service:8010
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 05 Dec 2017 19:32:26 GMT
+```
 
-## 3 - Run the weather-web micro service @port:8050
+```json
+{
+    "temperature":274.15,
+    "weatherId":803,
+    "weatherIcon":"04n",
+    "name":"Ankara",
+    "timestamp":1512496200.000000000
+}
+```
 
+## 3 - Run the weather-app micro service @port:8000
+
+```shell
 cd weather-web
 mvn spring-boot:run
+```
 
-Open the url http://localhost:8050 from your favourite browser
+Open the url http://localhost:8000 from your favourite browser
 
 ## 4 - References
 
